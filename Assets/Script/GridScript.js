@@ -3,12 +3,16 @@
 var speed : float = 1.0;
 var rotationSpeed : float = 10.0;
 var gap = 2;
+
 var x : int;
 var y : int;
 var v : int;//value
+var obj : GameObject;
+
+var mergeForm : int = 0;//1:has been merged;0:has not been merged
 
 function Start () {
-
+	obj = GameObject.Find("Cube");
 }
 
 function Update () {
@@ -45,15 +49,14 @@ function Update () {
 		transform.Rotate(0,60,0);
 		//renderer.material.color = Color.green;
 	}*/
-	transform.Rotate(0,3*v,0);
+	//transform.Rotate(0,3*v,0);
 }
 
-function setGap(g : float){
-	gap = g;
-}
-
-function setPosition(tmpx: int, tmpy: int){
+function setX(tmpx : int){
 	x = tmpx;
+}
+
+function setY(tmpy : int){
 	y = tmpy;
 }
 
@@ -73,11 +76,54 @@ function getValue():int{
 	return v;
 }
 
+function changeGameObject(){
+	var tempObject : GameObject;
+	if(v == 0){
+		tempObject = GameObject.Find("Cube");
+	}else if(v == 2){
+		tempObject = GameObject.Find("Cube2");
+	}else if(v == 4){
+		tempObject = GameObject.Find("Cube4");
+	}else if(v == 8){
+		tempObject = GameObject.Find("Cube8");
+	}else if(v == 16){
+		tempObject = GameObject.Find("Cube16");
+	}else if(v == 32){
+		tempObject = GameObject.Find("Cube32");
+	}else if(v == 64){
+		tempObject = GameObject.Find("Cube64");
+	}else if(v == 128){
+		tempObject = GameObject.Find("Cube128");
+	}else if(v == 256){
+		tempObject = GameObject.Find("Cube256");
+	}else if(v == 512){
+		tempObject = GameObject.Find("Cube512");
+	}else if(v == 1024){
+		tempObject = GameObject.Find("Cube1024");
+	}else if(v == 2048){
+		tempObject = GameObject.Find("Cube2048");
+	}
+	Destroy(obj);
+	obj = Instantiate(tempObject, Vector3(x,y,0)*gap,Quaternion.identity);
+}
+
+function getGameObject():GameObject{
+	return obj;
+}
+
+function setMergeForm(merge : int){
+	mergeForm = merge;
+}
+
+function getMergeForm(){
+	return mergeForm;
+}
+
 //for test
 function print(){
 	print(v);
 }
 
-function left(){
-	transform.Translate(-gap,0,0);
+function move(distX:int, distY:int, distZ:int){
+	obj.transform.Translate(distX,distY,distZ);
 }
