@@ -1,0 +1,66 @@
+Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     2090 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: F:\dachuang\UnityProject\2048-Unity3D\Build\2048-3D_Data\Managed\Boo.Lang.dll (this message is harmless)
+ArgumentOutOfRangeException: Index is less than 0 or more than or equal to the list count.
+Parameter name: index
+0
+  at System.Collections.ArrayList.ThrowNewArgumentOutOfRangeException (System.String name, System.Object actual, System.String message) [0x00000] in <filename unknown>:0 
+  at System.Collections.ArrayList.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at UnityScript.Lang.Array.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.randomAvailableCell () [0x00000] in <filename unknown>:0 
+  at GameManager.checkKeyDownState () [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Index is less than 0 or more than or equal to the list count.
+Parameter name: index
+0
+  at System.Collections.ArrayList.ThrowNewArgumentOutOfRangeException (System.String name, System.Object actual, System.String message) [0x00000] in <filename unknown>:0 
+  at System.Collections.ArrayList.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at UnityScript.Lang.Array.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.randomAvailableCell () [0x00000] in <filename unknown>:0 
+  at GameManager.checkKeyDownState () [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Index is less than 0 or more than or equal to the list count.
+Parameter name: index
+0
+  at System.Collections.ArrayList.ThrowNewArgumentOutOfRangeException (System.String name, System.Object actual, System.String message) [0x00000] in <filename unknown>:0 
+  at System.Collections.ArrayList.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at UnityScript.Lang.Array.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.randomAvailableCell () [0x00000] in <filename unknown>:0 
+  at GameManager.checkKeyDownState () [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Index is less than 0 or more than or equal to the list count.
+Parameter name: index
+0
+  at System.Collections.ArrayList.ThrowNewArgumentOutOfRangeException (System.String name, System.Object actual, System.String message) [0x00000] in <filename unknown>:0 
+  at System.Collections.ArrayList.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at UnityScript.Lang.Array.get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.randomAvailableCell () [0x00000] in <filename unknown>:0 
+  at GameManager.checkKeyDownState () [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

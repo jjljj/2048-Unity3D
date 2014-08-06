@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GridScript.js">
     <Files>
-      <File FileName="Assets\Script\GridScript.js" Line="107" Column="72" />
-      <File FileName="Assets\Script\GameManager.js" Line="242" Column="31" />
+      <File FileName="Assets\Script\GridScript.js" Line="48" Column="30" />
+      <File FileName="Assets\Script\GameManager.js" Line="258" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
