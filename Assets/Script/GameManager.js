@@ -13,7 +13,6 @@ function Start () {
 
 function Update () {
 	checkKeyDownState();
-	
 }
 
 function initGame(){

@@ -39,16 +39,21 @@ function Update () {
 		transform.Translate(0,-gap,0);
 	}*/
 	
-	/*if(v==0){
-		
-		//renderer.material.color = Color.clear;
+	if(v==0){
+		renderer.material.color = Color.clear;
 	}else if(v==2){
-		transform.Rotate(0,5,0);
-		//renderer.material.color = Color.red;
+		//transform.Rotate(0,5,0);
+		renderer.material.color = Color.red;
 	}else if(v==4){
-		transform.Rotate(0,60,0);
-		//renderer.material.color = Color.green;
-	}*/
+		//transform.Rotate(0,60,0);
+		renderer.material.color = Color.green;
+	}else if(v==8){
+		//transform.Rotate(0,60,0);
+		renderer.material.color = Color.blue;
+	}else if(v==16){
+		//transform.Rotate(0,60,0);
+		renderer.material.color = Color.black;
+	}
 	//transform.Rotate(0,3*v,0);
 }
 

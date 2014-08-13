@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\CameraScript.js" />
      <Compile Include="Assets\Script\GameManager.js" />
      <Compile Include="Assets\Script\GridScript.js" />
+     <None Include="Assets\MedievalBuildings\readme.txt" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
